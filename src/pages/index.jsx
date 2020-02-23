@@ -5,7 +5,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <React.Fragment>
-        <div style={{ color: `purple`, fontSize: `2rem` }}>
+        <div>
           <h1>Faiz Hameed</h1>
           <p>Full Stack Web Developer</p>
         </div>
