@@ -1,15 +1,14 @@
 import React from "react"
-import Footer from "../components/footer"
-import Header from "../components/header"
 
+import Layout from "../components/layout"
 const AboutPage = () => {
   return (
-    <div>
-      <Header />
-      <h1>About us</h1>
-      <p>working in corefactors bangalore</p>
-      <Footer />
-    </div>
+    <Layout>
+      <div>
+        <h1>About us</h1>
+        <p>working in corefactors bangalore</p>
+      </div>
+    </Layout>
   )
 }
 

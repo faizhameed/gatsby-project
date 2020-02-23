@@ -1,15 +1,15 @@
 import React from "react"
-import Footer from "../components/footer"
-import Header from "../components/header"
+
+import Layout from "../components/layout"
 const ContactPage = () => {
   return (
-    <div>
-      <Header />
-      <h1>Contact us</h1>
-      <p>+919544646977</p>
-      <p>Im develop website and applications that scale</p>
-      <Footer />
-    </div>
+    <Layout>
+      <div>
+        <h1>Contact us</h1>
+        <p>+919544646977</p>
+        <p>Im develop website and applications that scale</p>
+      </div>
+    </Layout>
   )
 }
 
