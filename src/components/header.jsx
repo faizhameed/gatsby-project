@@ -1,28 +1,62 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql, useStaticQuery } from "gatsby"
 /* import "./header.module.scss" */
 import headerStyles from "./header.module.scss" //css modules
 
 const Header = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetaData {
+          title
+          author
+        }
+      }
+    }
+  `)
   return (
-    <header>
-      <h4>LOGO HERE</h4>
-      <ul>
+    <header className={headerStyles.header}>
+      <h4>
+        <Link className={headerStyles["title"]} to="/">
+          {data.site.siteMetaData.title}
+        </Link>
+      </h4>
+      <ul className={headerStyles["navList"]}>
         <li>
-          {" "}
-          <Link className={headerStyles.link} to="/">
+          <Link
+            className={headerStyles.navItem}
+            activeClassName={headerStyles.activeNavItem}
+            to="/"
+          >
             Home
           </Link>
         </li>
         <li>
-          <Link to="/contact">Contact Page</Link>
+          <Link
+            className={headerStyles.navItem}
+            activeClassName={headerStyles.activeNavItem}
+            to="/contact"
+          >
+            Contact Page
+          </Link>
         </li>
         <li>
-          {" "}
-          <Link to="/about">About Page</Link>
+          <Link
+            className={headerStyles.navItem}
+            activeClassName={headerStyles.activeNavItem}
+            to="/about"
+          >
+            About Page
+          </Link>
         </li>
         <li>
-          <Link to="/blog">Blog Page</Link>
+          <Link
+            className={headerStyles.navItem}
+            activeClassName={headerStyles.activeNavItem}
+            to="/blog"
+          >
+            Blog Page
+          </Link>
         </li>
       </ul>
     </header>
