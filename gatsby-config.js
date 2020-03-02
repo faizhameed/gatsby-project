@@ -1,7 +1,16 @@
 module.exports = {
   siteMetadata: {
-    title: "Full-StackDeveloper",
-    author: "Faiz Hameed",
+    title: `Full-StackDeveloper`,
+    author: `Faiz Hameed`,
   },
-  plugins: ["gatsby-plugin-sass"],
+  plugins: [
+    { resolve: `gatsby-plugin-sass` },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: `${__dirname}/src/`,
+      },
+    },
+  ],
 }
