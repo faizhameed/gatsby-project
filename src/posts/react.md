@@ -1,6 +1,6 @@
 ---
-title:"the great react engine"
-date:"2020-02-23"
+title: "The great react engine"
+date: "2020-02-23"
 ---
 
 I am learning gatsby and react very fast

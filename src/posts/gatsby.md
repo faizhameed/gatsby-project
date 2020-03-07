@@ -1,6 +1,6 @@
 ---
-title:"the great gatsby website"
-date:"2020-02-27"
+title: "The great gatsby website"
+date: "2020-02-27"
 ---
 
 I am learning gatsby very fast
