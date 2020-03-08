@@ -15,12 +15,12 @@ module.exports.onCreateNode = ({ node, actions }) => {
   }
 }
 
+//1. get path to templates
+//2. get markdown data
+//3. Create new pages
 module.exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   const blogTemplate = path.resolve("./src/templates/blog.jsx")
-  //1. get path to templates
-  //2. get markdown data
-  //3. Create new pages
   const res = await graphql(`
     query {
       allMarkdownRemark {
