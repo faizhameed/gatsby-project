@@ -5,6 +5,8 @@ date: "2020-02-23"
 
 I am learning gatsby and react very fast
 
+![Sky](./sky.jpeg)
+
 ## Topics Covered
 
 1.  react hooks
